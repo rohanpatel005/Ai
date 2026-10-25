@@ -59,6 +59,20 @@ st.markdown(
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
+    /* Hide default auto-generated Streamlit page navigation */
+    [data-testid="stSidebarNav"], 
+    div[data-testid="stSidebarNav"], 
+    ul[data-testid="stSidebarNav"],
+    nav[data-testid="stSidebarNav"] {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0px !important;
+        max-height: 0px !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
     /* Top Safety Banner */
     .safety-banner {
         background: linear-gradient(90deg, #FEF2F2 0%, #FFFBEB 100%);
@@ -103,6 +117,22 @@ st.markdown(
     section[data-testid="stSidebar"] {
         background-color: #F8FAFC;
         border-right: 1px solid #E2E8F0;
+        padding-top: 1rem !important;
+    }
+
+    /* Clean Sidebar Radio Navigation */
+    section[data-testid="stSidebar"] div.stRadio > div[role="radiogroup"] > label {
+        background: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        padding: 8px 12px;
+        margin-bottom: 6px;
+        transition: all 0.15s ease;
+        cursor: pointer;
+    }
+    section[data-testid="stSidebar"] div.stRadio > div[role="radiogroup"] > label:hover {
+        border-color: #3B82F6;
+        background: #EFF6FF;
     }
     </style>
     """,
@@ -324,25 +354,27 @@ def main():
     st.sidebar.caption(f"{UNIVERSITY_NAME} • {COURSE_CODE}")
 
     pages_list = [
-        "Home Dashboard",
-        "Symptom Assessment",
-        "AI Reasoning",
-        "Backward Chaining Explorer",
-        "Compare Algorithms",
-        "Knowledge Base Explorer",
-        "Benchmark Lab",
-        "Error Analysis",
-        "Academic Methodology",
-        "Dataset & Knowledge Provenance",
-        "About & References",
+        "🏠 Home Dashboard",
+        "🩺 Symptom Assessment",
+        "🧠 AI Reasoning",
+        "🌲 Backward Chaining Explorer",
+        "⚖️ Compare Algorithms",
+        "📚 Knowledge Base Explorer",
+        "📊 Benchmark Lab",
+        "🛡️ Error & Failure Analysis",
+        "📖 Academic Methodology",
+        "💾 Dataset & Knowledge Provenance",
+        "ℹ️ About & References",
     ]
 
     # Handle internal redirection if set
     default_index = 0
     if "nav_target" in st.session_state:
         target = st.session_state.pop("nav_target")
-        if target in pages_list:
-            default_index = pages_list.index(target)
+        for idx, p in enumerate(pages_list):
+            if target.lower() in p.lower() or p.lower() in target.lower():
+                default_index = idx
+                break
 
     selected_page = st.sidebar.radio(
         "Navigation Menu:",
@@ -359,27 +391,27 @@ def main():
     st.sidebar.caption("Adani University FEST • 2026")
 
     # Routing
-    if selected_page == "Home Dashboard":
+    if "Home Dashboard" in selected_page:
         render_dashboard_home()
-    elif selected_page == "Symptom Assessment":
+    elif "Symptom Assessment" in selected_page:
         render_assessment_page()
-    elif selected_page == "AI Reasoning":
+    elif "AI Reasoning" in selected_page:
         render_reasoning_page()
-    elif selected_page == "Backward Chaining Explorer":
+    elif "Backward Chaining" in selected_page:
         render_backward_page()
-    elif selected_page == "Compare Algorithms":
+    elif "Compare Algorithms" in selected_page:
         render_comparison_page()
-    elif selected_page == "Knowledge Base Explorer":
+    elif "Knowledge Base" in selected_page:
         render_knowledge_base_page()
-    elif selected_page == "Benchmark Lab":
+    elif "Benchmark Lab" in selected_page:
         render_benchmark_page()
-    elif selected_page == "Error Analysis":
+    elif "Error" in selected_page:
         render_error_analysis_page()
-    elif selected_page == "Academic Methodology":
+    elif "Methodology" in selected_page:
         render_methodology_page()
-    elif selected_page == "Dataset & Knowledge Provenance":
+    elif "Dataset" in selected_page:
         render_dataset_page()
-    elif selected_page == "About & References":
+    elif "About" in selected_page:
         render_about_page()
 
 
