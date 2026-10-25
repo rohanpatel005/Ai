@@ -1,0 +1,101 @@
+case_id,ground_truth,symptoms_count,algorithm,conclusion,execution_time_ms,rules_evaluated,rules_fired,iterations,status
+CASE_00001,fungal_infection,4,Simple Matching (Baseline),fungal_infection,0.319,39,1,1,Supported hypotheses found
+CASE_00001,fungal_infection,4,Forward Chaining,None,0.161,39,0,1,Insufficient information for a rule-based inference.
+CASE_00001,fungal_infection,4,Backward Chaining,None,0.208,10,0,6,Target hypothesis could not be established from current facts.
+CASE_00001,fungal_infection,4,Prioritized Forward Chaining,None,0.291,39,0,1,Insufficient information for a rule-based inference.
+CASE_00002,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.217,39,1,1,Supported hypotheses found
+CASE_00002,fungal_infection,3,Forward Chaining,None,0.109,39,0,1,Insufficient information for a rule-based inference.
+CASE_00002,fungal_infection,3,Backward Chaining,None,0.098,6,0,4,Target hypothesis could not be established from current facts.
+CASE_00002,fungal_infection,3,Prioritized Forward Chaining,None,0.233,39,0,1,Insufficient information for a rule-based inference.
+CASE_00003,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.164,39,1,1,Supported hypotheses found
+CASE_00003,fungal_infection,3,Forward Chaining,None,0.114,39,0,1,Insufficient information for a rule-based inference.
+CASE_00003,fungal_infection,3,Backward Chaining,None,0.16,6,0,4,Target hypothesis could not be established from current facts.
+CASE_00003,fungal_infection,3,Prioritized Forward Chaining,None,0.324,39,0,1,Insufficient information for a rule-based inference.
+CASE_00004,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.371,39,1,1,Supported hypotheses found
+CASE_00004,fungal_infection,3,Forward Chaining,None,0.179,39,0,1,Insufficient information for a rule-based inference.
+CASE_00004,fungal_infection,3,Backward Chaining,None,0.15,10,0,6,Target hypothesis could not be established from current facts.
+CASE_00004,fungal_infection,3,Prioritized Forward Chaining,None,0.24,39,0,1,Insufficient information for a rule-based inference.
+CASE_00005,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.223,39,1,1,Supported hypotheses found
+CASE_00005,fungal_infection,3,Forward Chaining,None,0.105,39,0,1,Insufficient information for a rule-based inference.
+CASE_00005,fungal_infection,3,Backward Chaining,None,0.145,10,0,6,Target hypothesis could not be established from current facts.
+CASE_00005,fungal_infection,3,Prioritized Forward Chaining,None,0.297,39,0,1,Insufficient information for a rule-based inference.
+CASE_00006,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.173,39,1,1,Supported hypotheses found
+CASE_00006,fungal_infection,3,Forward Chaining,None,0.103,39,0,1,Insufficient information for a rule-based inference.
+CASE_00006,fungal_infection,3,Backward Chaining,None,0.091,6,0,4,Target hypothesis could not be established from current facts.
+CASE_00006,fungal_infection,3,Prioritized Forward Chaining,None,0.258,39,0,1,Insufficient information for a rule-based inference.
+CASE_00007,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.167,39,1,1,Supported hypotheses found
+CASE_00007,fungal_infection,3,Forward Chaining,None,0.101,39,0,1,Insufficient information for a rule-based inference.
+CASE_00007,fungal_infection,3,Backward Chaining,None,0.09,6,0,4,Target hypothesis could not be established from current facts.
+CASE_00007,fungal_infection,3,Prioritized Forward Chaining,None,0.221,39,0,1,Insufficient information for a rule-based inference.
+CASE_00008,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.18,39,1,1,Supported hypotheses found
+CASE_00008,fungal_infection,3,Forward Chaining,None,0.099,39,0,1,Insufficient information for a rule-based inference.
+CASE_00008,fungal_infection,3,Backward Chaining,None,0.116,10,0,6,Target hypothesis could not be established from current facts.
+CASE_00008,fungal_infection,3,Prioritized Forward Chaining,None,0.22,39,0,1,Insufficient information for a rule-based inference.
+CASE_00009,fungal_infection,3,Simple Matching (Baseline),fungal_infection,0.171,39,1,1,Supported hypotheses found
+CASE_00009,fungal_infection,3,Forward Chaining,None,0.1,39,0,1,Insufficient information for a rule-based inference.
+CASE_00009,fungal_infection,3,Backward Chaining,None,0.118,10,0,6,Target hypothesis could not be established from current facts.
+CASE_00009,fungal_infection,3,Prioritized Forward Chaining,None,0.229,39,0,1,Insufficient information for a rule-based inference.
+CASE_00010,fungal_infection,4,Simple Matching (Baseline),fungal_infection,0.157,39,1,1,Supported hypotheses found
+CASE_00010,fungal_infection,4,Forward Chaining,None,0.098,39,0,1,Insufficient information for a rule-based inference.
+CASE_00010,fungal_infection,4,Backward Chaining,None,0.116,10,0,6,Target hypothesis could not be established from current facts.
+CASE_00010,fungal_infection,4,Prioritized Forward Chaining,None,0.294,39,0,1,Insufficient information for a rule-based inference.
+CASE_00011,allergy,4,Simple Matching (Baseline),allergy,0.198,39,2,1,Supported hypotheses found
+CASE_00011,allergy,4,Forward Chaining,allergy,0.251,77,1,2,Inferred 1 fact(s) across 2 iteration(s).
+CASE_00011,allergy,4,Backward Chaining,allergy,0.17,14,1,7,Successfully proved 1 hypothesis goal(s).
+CASE_00011,allergy,4,Prioritized Forward Chaining,allergy,0.508,77,1,2,Inferred 1 fact(s) using prioritized ordering across 2 iteration(s).
+CASE_00012,allergy,3,Simple Matching (Baseline),allergy,0.341,39,1,1,Supported hypotheses found
+CASE_00012,allergy,3,Forward Chaining,None,0.152,39,0,1,Insufficient information for a rule-based inference.
+CASE_00012,allergy,3,Backward Chaining,None,0.141,14,0,7,Target hypothesis could not be established from current facts.
+CASE_00012,allergy,3,Prioritized Forward Chaining,None,0.255,39,0,1,Insufficient information for a rule-based inference.
+CASE_00013,allergy,3,Simple Matching (Baseline),allergy,0.164,39,2,1,Supported hypotheses found
+CASE_00013,allergy,3,Forward Chaining,None,0.104,39,0,1,Insufficient information for a rule-based inference.
+CASE_00013,allergy,3,Backward Chaining,None,0.195,14,0,7,Target hypothesis could not be established from current facts.
+CASE_00013,allergy,3,Prioritized Forward Chaining,None,0.311,39,0,1,Insufficient information for a rule-based inference.
+CASE_00014,allergy,3,Simple Matching (Baseline),allergy,0.163,39,1,1,Supported hypotheses found
+CASE_00014,allergy,3,Forward Chaining,None,0.104,39,0,1,Insufficient information for a rule-based inference.
+CASE_00014,allergy,3,Backward Chaining,None,0.079,4,0,2,Target hypothesis could not be established from current facts.
+CASE_00014,allergy,3,Prioritized Forward Chaining,None,0.225,39,0,1,Insufficient information for a rule-based inference.
+CASE_00015,allergy,3,Simple Matching (Baseline),allergy,0.155,39,2,1,Supported hypotheses found
+CASE_00015,allergy,3,Forward Chaining,None,0.109,39,0,1,Insufficient information for a rule-based inference.
+CASE_00015,allergy,3,Backward Chaining,None,0.151,14,0,7,Target hypothesis could not be established from current facts.
+CASE_00015,allergy,3,Prioritized Forward Chaining,None,0.238,39,0,1,Insufficient information for a rule-based inference.
+CASE_00016,allergy,3,Simple Matching (Baseline),allergy,0.149,39,1,1,Supported hypotheses found
+CASE_00016,allergy,3,Forward Chaining,None,0.098,39,0,1,Insufficient information for a rule-based inference.
+CASE_00016,allergy,3,Backward Chaining,None,0.126,14,0,7,Target hypothesis could not be established from current facts.
+CASE_00016,allergy,3,Prioritized Forward Chaining,None,0.217,39,0,1,Insufficient information for a rule-based inference.
+CASE_00017,allergy,3,Simple Matching (Baseline),allergy,0.172,39,2,1,Supported hypotheses found
+CASE_00017,allergy,3,Forward Chaining,None,0.099,39,0,1,Insufficient information for a rule-based inference.
+CASE_00017,allergy,3,Backward Chaining,None,0.125,14,0,7,Target hypothesis could not be established from current facts.
+CASE_00017,allergy,3,Prioritized Forward Chaining,None,0.218,39,0,1,Insufficient information for a rule-based inference.
+CASE_00018,allergy,3,Simple Matching (Baseline),allergy,0.149,39,1,1,Supported hypotheses found
+CASE_00018,allergy,3,Forward Chaining,None,0.098,39,0,1,Insufficient information for a rule-based inference.
+CASE_00018,allergy,3,Backward Chaining,None,0.071,4,0,2,Target hypothesis could not be established from current facts.
+CASE_00018,allergy,3,Prioritized Forward Chaining,None,0.232,39,0,1,Insufficient information for a rule-based inference.
+CASE_00019,allergy,3,Simple Matching (Baseline),allergy,0.156,39,2,1,Supported hypotheses found
+CASE_00019,allergy,3,Forward Chaining,None,0.098,39,0,1,Insufficient information for a rule-based inference.
+CASE_00019,allergy,3,Backward Chaining,None,0.185,14,0,7,Target hypothesis could not be established from current facts.
+CASE_00019,allergy,3,Prioritized Forward Chaining,None,0.23,39,0,1,Insufficient information for a rule-based inference.
+CASE_00020,allergy,4,Simple Matching (Baseline),allergy,0.176,39,2,1,Supported hypotheses found
+CASE_00020,allergy,4,Forward Chaining,allergy,0.239,77,1,2,Inferred 1 fact(s) across 2 iteration(s).
+CASE_00020,allergy,4,Backward Chaining,allergy,0.173,14,1,7,Successfully proved 1 hypothesis goal(s).
+CASE_00020,allergy,4,Prioritized Forward Chaining,allergy,0.601,77,1,2,Inferred 1 fact(s) using prioritized ordering across 2 iteration(s).
+CASE_00021,gerd,6,Simple Matching (Baseline),gerd,0.24,39,4,1,Supported hypotheses found
+CASE_00021,gerd,6,Forward Chaining,gerd,0.207,77,1,2,Inferred 1 fact(s) across 2 iteration(s).
+CASE_00021,gerd,6,Backward Chaining,gerd,0.245,30,1,18,Successfully proved 1 hypothesis goal(s).
+CASE_00021,gerd,6,Prioritized Forward Chaining,gerd,0.535,77,1,2,Inferred 1 fact(s) using prioritized ordering across 2 iteration(s).
+CASE_00022,gerd,5,Simple Matching (Baseline),gerd,0.248,39,3,1,Supported hypotheses found
+CASE_00022,gerd,5,Forward Chaining,None,0.102,39,0,1,Insufficient information for a rule-based inference.
+CASE_00022,gerd,5,Backward Chaining,None,0.331,30,0,17,Target hypothesis could not be established from current facts.
+CASE_00022,gerd,5,Prioritized Forward Chaining,None,0.234,39,0,1,Insufficient information for a rule-based inference.
+CASE_00023,gerd,5,Simple Matching (Baseline),gerd,0.171,39,4,1,Supported hypotheses found
+CASE_00023,gerd,5,Forward Chaining,None,0.1,39,0,1,Insufficient information for a rule-based inference.
+CASE_00023,gerd,5,Backward Chaining,None,0.272,31,0,18,Target hypothesis could not be established from current facts.
+CASE_00023,gerd,5,Prioritized Forward Chaining,None,0.227,39,0,1,Insufficient information for a rule-based inference.
+CASE_00024,gerd,5,Simple Matching (Baseline),gerd,0.175,39,4,1,Supported hypotheses found
+CASE_00024,gerd,5,Forward Chaining,None,0.099,39,0,1,Insufficient information for a rule-based inference.
+CASE_00024,gerd,5,Backward Chaining,None,0.146,15,0,10,Target hypothesis could not be established from current facts.
+CASE_00024,gerd,5,Prioritized Forward Chaining,None,0.295,39,0,1,Insufficient information for a rule-based inference.
+CASE_00025,gerd,5,Simple Matching (Baseline),gerd,0.168,39,2,1,Supported hypotheses found
+CASE_00025,gerd,5,Forward Chaining,gerd,0.23,77,1,2,Inferred 1 fact(s) across 2 iteration(s).
+CASE_00025,gerd,5,Backward Chaining,gerd,0.208,25,1,15,Successfully proved 1 hypothesis goal(s).
+CASE_00025,gerd,5,Prioritized Forward Chaining,gerd,0.467,77,1,2,Inferred 1 fact(s) using prioritized ordering across 2 iteration(s).
